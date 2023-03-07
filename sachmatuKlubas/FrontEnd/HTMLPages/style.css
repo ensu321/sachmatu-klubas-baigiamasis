@@ -1,0 +1,21 @@
+html {
+    height: 100vh;
+    margin: 0 auto;
+}
+
+body {
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+#mainContainer {
+    background-image: url("/assets/—Pngtree—creative\ chess\ scene_1321956.jpg");
+    background-repeat: no-repeat;
+    background-size:auto;
+    height: 90vh;
+    width: 100%;
+    margin-top: 0 !important;
+
+
+}
