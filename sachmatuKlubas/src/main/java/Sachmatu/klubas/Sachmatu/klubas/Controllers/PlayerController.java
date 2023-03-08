@@ -2,6 +2,7 @@ package Sachmatu.klubas.Sachmatu.klubas.Controllers;
 
 import Sachmatu.klubas.Sachmatu.klubas.Converters.PlayerConverter;
 import Sachmatu.klubas.Sachmatu.klubas.DTO.AddPlayerDTO;
+import Sachmatu.klubas.Sachmatu.klubas.DTO.ViewPlayerDTO;
 import Sachmatu.klubas.Sachmatu.klubas.Entities.Player;
 import Sachmatu.klubas.Sachmatu.klubas.Services.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,8 +31,8 @@ public class PlayerController {
     }
 
     @GetMapping
-    public List<AddPlayerDTO> getPlayers() {
-        return PlayerConverter.convertPlayerEntityListToDto(this.playerService.getAllPlayers());
+    public List<ViewPlayerDTO> getPlayers() {
+        return PlayerConverter.convertViewPlayerEntityListToDto(this.playerService.getAllPlayers());
     }
 
 }
