@@ -30,3 +30,7 @@ td {
     color: white !important;
 }
 
+
+.administrationButtonsCell {
+    display: flex;
+}

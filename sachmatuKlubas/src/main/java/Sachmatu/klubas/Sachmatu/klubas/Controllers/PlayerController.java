@@ -1,7 +1,7 @@
 package Sachmatu.klubas.Sachmatu.klubas.Controllers;
 
 import Sachmatu.klubas.Sachmatu.klubas.Converters.PlayerConverter;
-import Sachmatu.klubas.Sachmatu.klubas.DTO.AddPlayerDTO;
+import Sachmatu.klubas.Sachmatu.klubas.DTO.PlayerDTO;
 import Sachmatu.klubas.Sachmatu.klubas.DTO.ViewPlayerDTO;
 import Sachmatu.klubas.Sachmatu.klubas.Entities.Player;
 import Sachmatu.klubas.Sachmatu.klubas.Services.PlayerService;
@@ -37,6 +37,16 @@ public class PlayerController {
     @DeleteMapping("/{id}")
     public void deletePlayerById(@PathVariable Long id){
         this.playerService.deletePlayerById(id);
+    }
+
+    @GetMapping("/{id}")
+    public PlayerDTO getPlayerById(@PathVariable Long id) {
+        return PlayerConverter.convertPlayerEntityToDto(this.playerService.getPlayerById(id));
+    }
+
+    @PatchMapping("/{id}")
+    public void editPlayerById(@PathVariable Long id, @RequestBody AddStudentDTO studentDTO) {
+        this.studentService.editStudentById(id, StudentConverter.convertAddStudentDtoToEntity(studentDTO));
     }
 
 }

@@ -1,10 +1,9 @@
 package Sachmatu.klubas.Sachmatu.klubas.Converters;
 
-import Sachmatu.klubas.Sachmatu.klubas.DTO.AddPlayerDTO;
+import Sachmatu.klubas.Sachmatu.klubas.DTO.PlayerDTO;
 import Sachmatu.klubas.Sachmatu.klubas.DTO.ViewPlayerDTO;
 import Sachmatu.klubas.Sachmatu.klubas.Entities.Player;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
@@ -36,6 +35,20 @@ public abstract class PlayerConverter {
             viewPlayerDTOs.add(PlayerConverter.convertViewPlayerEntityToDTO(p));
         }
         return viewPlayerDTOs;
+    }
+
+    public static PlayerDTO convertPlayerEntityToDto(Player player) {
+        PlayerDTO playerDTO = null;
+        if (player != null) {
+            playerDTO = new PlayerDTO();
+            playerDTO.setId(player.getId());
+            playerDTO.setStartDate(player.getStartDate());
+            playerDTO.setPersonalCode(player.getPersonalCode());
+            playerDTO.setEmail(player.getEmail());
+            playerDTO.setLastName(player.getLastName());
+            playerDTO.setFirstName(player.getFirstName());
+        }
+        return playerDTO;
     }
 
 

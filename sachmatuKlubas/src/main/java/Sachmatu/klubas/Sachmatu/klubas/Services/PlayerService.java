@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @AllArgsConstructor
 @Service
@@ -22,6 +23,16 @@ public class PlayerService {
 
     public void deletePlayerById(Long id) {
         this.playerRepository.deleteById(id);
+    }
+
+    public Player getPlayerById(Long id) {
+        Optional<Player> player = playerRepository.findById(id);
+
+        if (!player.isPresent()) {
+            return null;
+        }
+
+        return player.get();
     }
 
 }

@@ -24,3 +24,9 @@ export const getPlayers = async () => {
   
     alert(`[Player ${playerId}] deleted successfully`);
   };
+
+  export const getPlayerByID = async (playerId) => {
+    const response = await fetch(`${API_BASE_URL}/player/${playerId}`);
+    const player = await response.json();
+    return player;
+  };

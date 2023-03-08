@@ -31,8 +31,19 @@ const rendePlayerTableRows = async (players) => {
       const experienceCell = document.createElement("td");
       experienceCell.innerText = p.experience;
       playerRow.appendChild(experienceCell);
+
+    
   
       const actionCell = document.createElement("td");
+      actionCell.className = "administrationButtonsCell";
+      const editButton = document.createElement("button");
+      editButton.innerText = "Redaguoti";
+      editButton.className = "btn btn-warning";
+      editButton.style = "margin-right: 10px";
+      editButton.addEventListener("click", async () => {
+        window.location.replace(`../edit-player-data/edit-player.html?id=${p.id}`);
+      });
+      actionCell.appendChild(editButton);
       const deleteButton = document.createElement("button");
       deleteButton.innerText = "Ištrinti";
       deleteButton.className = "btn btn-danger";
