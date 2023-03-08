@@ -20,4 +20,8 @@ public class PlayerService {
         return this.playerRepository.findAll();
     }
 
+    public void deletePlayerById(Long id) {
+        this.playerRepository.deleteById(id);
+    }
+
 }

@@ -10,6 +10,7 @@ import java.time.LocalDate;
 @Setter
 public class ViewPlayerDTO {
 
+    private Long id;
 
     private String firstName;
 

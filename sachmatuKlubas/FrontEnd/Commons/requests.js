@@ -8,14 +8,19 @@ export const savePlayer = async (player) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(player)
-
-    });
-    
+    });    
 };
-
 
 export const getPlayers = async () => {
     const response = await fetch(`${API_BASE_URL}/player`);
     const players = await response.json();
     return players;
+  };
+
+  export const deletePlayerById = async (playerId) => {
+    await fetch(`${API_BASE_URL}/player/${playerId}`, {
+      method: "DELETE",
+    });
+  
+    alert(`[Player ${playerId}] deleted successfully`);
   };

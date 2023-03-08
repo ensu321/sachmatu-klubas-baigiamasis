@@ -1,4 +1,4 @@
-import { getPlayers } from "/Commons/requests.js";
+import { getPlayers, deletePlayerById } from "/Commons/requests.js";
 
 
 const rendePlayerTableRows = async (players) => {
@@ -34,12 +34,12 @@ const rendePlayerTableRows = async (players) => {
   
       const actionCell = document.createElement("td");
       const deleteButton = document.createElement("button");
-      deleteButton.innerText = "DELETE";
+      deleteButton.innerText = "Ištrinti";
       deleteButton.className = "btn btn-danger";
-      // deleteButton.addEventListener("click", async () => {
-      //   await deleteExamById(e.id);
-      //   window.location.reload();
-      // });
+      deleteButton.addEventListener("click", async () => {
+        await deletePlayerById(p.id);
+        window.location.reload();
+      });
       actionCell.appendChild(deleteButton);
       playerRow.appendChild(actionCell);
   

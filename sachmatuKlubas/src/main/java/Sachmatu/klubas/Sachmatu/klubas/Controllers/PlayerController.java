@@ -34,5 +34,9 @@ public class PlayerController {
     public List<ViewPlayerDTO> getPlayers() {
         return PlayerConverter.convertViewPlayerEntityListToDto(this.playerService.getAllPlayers());
     }
+    @DeleteMapping("/{id}")
+    public void deletePlayerById(@PathVariable Long id){
+        this.playerService.deletePlayerById(id);
+    }
 
 }

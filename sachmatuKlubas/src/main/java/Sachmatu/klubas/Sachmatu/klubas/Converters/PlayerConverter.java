@@ -16,6 +16,7 @@ public abstract class PlayerConverter {
         ViewPlayerDTO viewPlayerDTO = null;
         if (player != null) {
             viewPlayerDTO = new ViewPlayerDTO();
+            viewPlayerDTO.setId(player.getId());
             viewPlayerDTO.setEmail(player.getEmail());
             viewPlayerDTO.setLastName(player.getLastName());
             viewPlayerDTO.setFirstName(player.getFirstName());
