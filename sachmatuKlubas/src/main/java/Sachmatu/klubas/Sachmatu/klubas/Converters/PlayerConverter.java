@@ -51,6 +51,20 @@ public abstract class PlayerConverter {
         return playerDTO;
     }
 
+    public static Player convertPlayerDtoToEntity(PlayerDTO playerDTO) {
+        Player player = null;
+        if (playerDTO != null) {
+            player = new Player();
+            player.setFirstName(playerDTO.getFirstName());
+            player.setLastName(playerDTO.getLastName());
+            player.setEmail(playerDTO.getEmail());
+            player.setPersonalCode(playerDTO.getPersonalCode());
+            player.setStartDate(playerDTO.getStartDate());
+
+        }
+        return player;
+    }
+
 
     public static int calculateAge(long personalCode) {
         String birthDateStr = Long.toString(personalCode).substring(1, 7);

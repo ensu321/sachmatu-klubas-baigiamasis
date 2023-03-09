@@ -30,3 +30,17 @@ export const getPlayers = async () => {
     const player = await response.json();
     return player;
   };
+
+  export const patchPlayer = async (player, id) => {
+    await fetch(`${API_BASE_URL}/player/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(player),
+    });
+  
+    alert(`[Player ${id}] updated successfully!`);
+  };
+
+  

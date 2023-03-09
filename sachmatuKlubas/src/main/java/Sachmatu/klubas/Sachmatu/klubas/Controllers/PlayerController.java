@@ -45,8 +45,8 @@ public class PlayerController {
     }
 
     @PatchMapping("/{id}")
-    public void editPlayerById(@PathVariable Long id, @RequestBody AddStudentDTO studentDTO) {
-        this.studentService.editStudentById(id, StudentConverter.convertAddStudentDtoToEntity(studentDTO));
+    public void editPlayerById(@PathVariable Long id, @RequestBody PlayerDTO playerDTO) {
+        this.playerService.editPlayerById(id, PlayerConverter.convertPlayerDtoToEntity(playerDTO));
     }
 
 }
