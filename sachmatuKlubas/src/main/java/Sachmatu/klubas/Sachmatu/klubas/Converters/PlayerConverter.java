@@ -60,7 +60,6 @@ public abstract class PlayerConverter {
             player.setEmail(playerDTO.getEmail());
             player.setPersonalCode(playerDTO.getPersonalCode());
             player.setStartDate(playerDTO.getStartDate());
-
         }
         return player;
     }

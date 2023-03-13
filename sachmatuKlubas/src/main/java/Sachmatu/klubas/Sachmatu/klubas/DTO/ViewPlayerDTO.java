@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDate;
 @NoArgsConstructor
 @Getter
 @Setter
@@ -23,6 +22,5 @@ public class ViewPlayerDTO {
     private int age;
 
     private String experience;
-
 
 }

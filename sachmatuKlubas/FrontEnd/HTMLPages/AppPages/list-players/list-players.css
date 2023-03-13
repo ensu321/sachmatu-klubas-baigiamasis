@@ -1,36 +1,34 @@
 #playerTable {
-    margin: 100px auto;
-    width: 50%;
-    color: white !important;
-  }
-  
-  #addPlayer {
-    margin-bottom: 2rem;
-     }
+  margin: 100px auto;
+  width: 50%;
+  color: white !important;
+}
 
- #mainContainer {
-    background-image: url("/assets/—Pngtree—creative\ chess\ scene_1321956.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 100vh;
-    width: 100%;
-    margin-top: 0 !important;
-} 
+#addPlayer {
+  margin-bottom: 2rem;
+}
+
+#mainContainer {
+  background-image: url("/assets/—Pngtree—creative\ chess\ scene_1321956.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin-top: 0 !important;
+}
 
 th {
-    color: white;
+  color: white;
 }
 
 td {
-    color: white !important;
+  color: white !important;
 }
 
 #h1PlayerList {
- 
-    color: white !important;
+  color: white !important;
 }
 
-
 .administrationButtonsCell {
-    display: flex;
+  display: flex;
 }
