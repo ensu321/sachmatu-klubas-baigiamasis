@@ -1,0 +1,17 @@
+#mainContainer {
+  background-image: url("/assets/—Pngtree—creative\ chess\ scene_1321956.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 0 !important;
+}
+
+#h1Title {
+  color: white;
+}
+
+.headerTitle {
+  margin-top: 0rem;
+  text-align: center;
+}
