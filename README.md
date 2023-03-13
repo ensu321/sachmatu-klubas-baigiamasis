@@ -2,39 +2,40 @@
 This is a simple Java application that performs CRUD (Create, Read, Update, Delete) operations on a database. The application is built using Java and the Spring framework.
 The aim of the system is to allow chess club administrator to register new players to the club and manage the players data view, delete and edit. 
 Tech stack'as
-• Front-end:
-    o HTML
-    o CSS (SASS / SCSS pageidautina, bet nebūtina)
-    o JavaScript
-• Back-end:
-    o Spring / Spring Boot
-    o Java 17
-• Database:
-    o MySQL
+*  Front-end:
+    * HTML
+    * CSS
+    * JavaScript
+* Back-end:
+  * Spring / Spring Boot
+  * Java 17
+* Database:
+  * MySQL
+
 Funkciniai reikalavimai
-• Žaidėjų registravimo forma:
-    o Formos laukai:
-        ▪ Vardas
-        ▪ Pavardė
-        ▪ El. Paštas
-        ▪ Asmens kodas
-        ▪ Data nuo kurios pradėjo žaisti šachmatais
-        • Užregistruotų žaidėjų sąrašo peržiūra
-    o Sąraše atvaizduojami laukai:
-        ▪ Vardas
-        ▪ Pavardė
-        ▪ El. Paštas
-        ▪ Lytis (Jei nesigauna – praleisti, asmens kodas negali būti atvaizduojamas)
-        ▪ Amžius (Jei nesigauna – praleisti, asmens kodas negali būti atvaizduojamas)
-        ▪ Šachmatų žaidimo patirtis metais ir mėnesiais (Pvz: “1 m. 3 mėn.”) (Jei 
+* Žaidėjų registravimo forma:
+    * Formos laukai:
+        * Vardas
+        * Pavardė
+        * El. Paštas
+        * Asmens kodas
+        * Data nuo kurios pradėjo žaisti šachmatais
+        * Užregistruotų žaidėjų sąrašo peržiūra
+    * Sąraše atvaizduojami laukai:
+        * Vardas
+        * Pavardė
+        * El. Paštas
+        * Lytis (Jei nesigauna – praleisti, asmens kodas negali būti atvaizduojamas)
+        * Amžius (Jei nesigauna – praleisti, asmens kodas negali būti atvaizduojamas)
+        * Šachmatų žaidimo patirtis metais ir mėnesiais (Pvz: “1 m. 3 mėn.”) (Jei 
         nesigauna - rodyti datą nuo kurios pradėjo žaisti)
-        ▪ Administravimo mygtukai
-• Užregistruotų žaidėjų redagavimas (galimybė pakeisti esamus duomenis)
-• Užresigstruotų žaidėjų trinimas
-• Programa turi veikti tiek su XXa., tiek su XXIa. gimusių lietuvių asmens kodais 
-• Visi duomenys turi būti saugomi duomenų bazėje
-• Duomenų bazėje privalo būti sudėti reikiami “Primary Key” ir “Foreign Key” raktai
-• Bent minimalus dizainas (tam puikiai tiktų bet kuris CSS framework’as)
+        * Administravimo mygtukai
+* Užregistruotų žaidėjų redagavimas (galimybė pakeisti esamus duomenis)
+* Užresigstruotų žaidėjų trinimas
+* Programa turi veikti tiek su XXa., tiek su XXIa. gimusių lietuvių asmens kodais 
+* Visi duomenys turi būti saugomi duomenų bazėje
+* Duomenų bazėje privalo būti sudėti reikiami “Primary Key” ir “Foreign Key” raktai
+* Bent minimalus dizainas (tam puikiai tiktų bet kuris CSS framework’as)
 
 ## Installation
 
